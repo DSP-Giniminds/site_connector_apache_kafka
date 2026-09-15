@@ -16,6 +16,21 @@
 | mTLS, local guardrail enforcement, credential custody | Not built yet — deferred |
 | Helm/Docker/RPM/DEB packaging | Not built yet |
 
+# site-connector.tar
+
+Site Connector — a Go-based telemetry collector for Apache Kafka
+(broker/controller JMX, AdminClient, Schema Registry, Kafka Connect
+worker metrics, log tailing). Runs inside the customer's network,
+pushes telemetry out to a control plane; never accepts inbound
+connections.
+
+## Extract
+
+```bash
+tar -xf site-connector.tar
+cd site-connector
+```
+
 ## Setting up metrics on your Kafka VM
 
 1. Download the JMX Prometheus Exporter jar (needs internet access on the VM):
