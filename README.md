@@ -1,4 +1,4 @@
-# Site Connector — scaffold (Apache Kafka only, security deferred)
+# Site Connector — scaffold (Apache Kafka)
 
 ## What's real vs. stubbed
 
