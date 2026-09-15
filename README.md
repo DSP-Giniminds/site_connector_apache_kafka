@@ -1,4 +1,4 @@
-# Site Connector — scaffold (Apache Kafka only, security deferred)
+# Site Connector — scaffold (Apache Kafka)
 
 ## What's real vs. stubbed
 
@@ -55,7 +55,6 @@ it doesn't remote-tail.)
 ## Local dev without a real cluster
 
 ```bash
-docker compose up -d          # Kafka in KRaft mode + kafka-ui on :8080
 ./bin/stubhub &
 ./bin/connector                # mock collector by default, no logs to tail unless you set SC_SERVER_LOG etc.
 ```
